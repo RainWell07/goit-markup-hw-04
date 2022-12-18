@@ -35,6 +35,7 @@ ol {
   margin-bottom: 0;
   padding-left: 0;
   padding-right: 0;
+  
 }
 
 
@@ -42,6 +43,7 @@ ol {
  --primary-text-color:#434455;
  --title-text-color: #2E2F42;
  --logo-color: #4D5AE5;
+ --white-footer: #FFFFFF;
 }
 
 a:hover {
@@ -116,6 +118,7 @@ text-align: center;
 letter-spacing: 0.02em;
 color: #FFFFFF;
 padding-bottom: 48px;
+
 }
 
 .head-section {
@@ -129,6 +132,7 @@ padding-bottom: 48px;
     padding: 192px 0px 192px 0px;
     text-align: center;
     margin: 0;
+    width: 1440px;
 }
 
 .head {
@@ -288,7 +292,7 @@ margin-top: 16px;
     font-size: 16px;
     line-height: 24px;
 }
-button:hover {
+.portfolio-btn:hover {
     background: #4D5AE5;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
@@ -300,6 +304,9 @@ button:hover {
     flex-wrap: wrap;
     gap: 24px;
     }
+    .main-content-portfolio:hover {
+        box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08);
+    }
     .photo-base {
     width: 360px;
     height: 420px;
@@ -308,6 +315,7 @@ button:hover {
     background: #FFFFFF;
     outline: 0.5px solid #F4F4FD;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+
     }
     .portfolio-text {
     padding-top: 32px;
@@ -319,16 +327,106 @@ button:hover {
         padding-bottom: 120px;
     }
     
-    .info-icon::before {
-    content:"" ;
-    display: block;
+.icon-svg{
+    width: 64px;
+    height: 64px;
+}
+.skill-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
     height: 112px;
-    outline: 1px solid;
     background-color: #F4F4FD;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    }
-   .info-icon:nth-child(1):before {
-    background-image: url(../image/image-1.jpg);
-   }
+    margin-bottom: 8px;
+}
+.social {
+    display:flex;
+    align-items: center;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-top: 8px;
+    width: 232px;
+    height: 48px;
+    gap: 24px;
+}
+.social-btn {
+    width: 16px;
+    height: 16px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.btn-config {
+background-color: #4D5AE5;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+border:none;
+width: 40px;
+height: 40px;
+}
+.about-customer {
+    font-family: 'Roboto-medium';
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2E2F42;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.customers {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 168px;
+    height: 88px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+.customer-svg {
+    display: flex;
+    width: 40px;
+    height: 52px;
+}
+.svg-position {
+    display: flex;
+    gap: 24px;
+}
+
+
+.footer-media {
+    width: 208px;
+    margin-left: 120px;
+}
+.social-place {
+    display: flex;
+}
+
+.media-style {
+    font-family: "Roboto-regular";
+    font-size: 16px;
+    color: var(--white-footer);
+    padding-bottom: 16px;
+}
+
+.btn-config-footer {
+        background-color:rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: none;
+        width: 40px;
+        height: 40px;
+}
+.social-btn-footer {
+    width: 24px;
+    height: 24px;
+}
+.footer-gap {
+    display: flex;
+    gap: 16px;
+}
