@@ -303,8 +303,8 @@ margin-top: 16px;
     flex-wrap: wrap;
     gap: 24px;
     }
-    .main-content-portfolio:hover {
-        box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08);
+    .icon-shadow:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     }
     .photo-base {
     width: 360px;
@@ -366,6 +366,10 @@ border:none;
 width: 40px;
 height: 40px;
 }
+.btn-config:hover,
+.btn-config:focus {
+    background-color: teal;
+}
 .about-customer {
     font-family: 'Roboto-medium';
     font-size: 36px;
@@ -384,11 +388,22 @@ height: 40px;
     height: 88px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
+    
 }
 .customer-svg {
     display: flex;
     width: 40px;
     height: 52px;
+    fill:#8E8F99
+    
+}
+.customer-svg:hover,
+.customer-svg:focus {
+    fill: #4D5AE5;
+}
+.customers:hover,
+.customers:focus {
+border: 1px solid #4D5AE5;
 }
 .svg-position {
     display: flex;
@@ -420,6 +435,10 @@ height: 40px;
         border: none;
         width: 40px;
         height: 40px;
+}
+.btn-config-footer:hover,
+.btn-config-footer:focus {
+background-color: red;
 }
 .social-btn-footer {
     width: 24px;
