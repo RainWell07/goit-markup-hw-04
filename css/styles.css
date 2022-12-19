@@ -291,7 +291,8 @@ margin-top: 16px;
     font-size: 16px;
     line-height: 24px;
 }
-.portfolio-btn:hover {
+.portfolio-btn:hover,
+.portfolio-btn:focus {
     background: #4D5AE5;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
@@ -368,7 +369,7 @@ height: 40px;
 }
 .btn-config:hover,
 .btn-config:focus {
-    background-color: teal;
+    background-color:#404BBF;
 }
 .about-customer {
     font-family: 'Roboto-medium';
@@ -381,7 +382,7 @@ height: 40px;
     padding-bottom: 120px;
 }
 .customers {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 168px;
@@ -392,22 +393,17 @@ height: 40px;
 }
 .customer-svg {
     display: flex;
-    width: 40px;
-    height: 52px;
+    align-items: center;
+    justify-content: center;
+    width: 106px;
+    height: 60px;
     fill:#8E8F99
     
 }
-.customer-svg:hover{
-    fill: #4D5AE5;
-}
-.customers:hover{
-border: 1px solid #4D5AE5;
-}
-.customers:focus{
-    border: 1px solid #4D5AE5;
-}
 .svg-position {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 24px;
 }
 .footer-media {
@@ -437,7 +433,7 @@ border: 1px solid #4D5AE5;
 }
 .btn-config-footer:hover,
 .btn-config-footer:focus {
-background-color: red;
+background-color: #31D0AA;
 }
 .social-btn-footer {
     width: 24px;
@@ -446,4 +442,12 @@ background-color: red;
 .footer-gap {
     display: flex;
     gap: 16px;
+}
+.customers:hover,
+.customers:focus {
+    border: 1px solid #4D5AE5;
+}
+.customers:hover .customer-svg,
+.customers:focus .customer-svg {
+    fill: #4D5AE5;
 }
