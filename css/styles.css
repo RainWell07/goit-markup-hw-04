@@ -404,7 +404,7 @@ height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 24px;
+    column-gap: 24px;
 }
 .footer-media {
     width: 208px;
